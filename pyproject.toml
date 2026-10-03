@@ -1,0 +1,11 @@
+[project]
+name = "portfolio-assistant-chatbot"
+version = "0.0.1"
+description = "Production-grade Agentic RAG chatbot for my portfolio"
+requires-python = ">=3.11"
+
+[tool.ruff]
+line-length = 100
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "B"]

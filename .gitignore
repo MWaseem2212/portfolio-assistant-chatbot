@@ -1,0 +1,25 @@
+# secrets
+.env
+*.pem
+
+# python
+__pycache__/
+*.pyc
+.venv/
+.pytest_cache/
+.ruff_cache/
+*.egg-info/
+
+# data stores and local state
+qdrant_storage/
+*.sqlite
+*.db
+
+# node / frontend
+node_modules/
+.next/
+
+# os / editor
+.DS_Store
+.idea/
+.vscode/
