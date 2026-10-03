@@ -1,0 +1,18 @@
+from pydantic_settings import BaseSettings, SettingsConfigDict
+
+class Settings(BaseSettings):
+    model_config = SettingsConfigDict(env_file=".env", extra="ignore")
+
+    groq_api_key: str = ""
+    embedding_model: str = "BAAI/bge-small-en-v1.5"
+    qdrant_url: str = "http://localhost:6333"
+    qdrant_api_key: str = ""
+    langfuse_public_key: str = ""
+    langfuse_secret_key: str = ""
+    langfuse_host: str = ""
+    smtp_user: str = ""
+    smtp_app_password: str = ""
+    notify_to_email: str = ""
+    allowed_origins: str = "http://localhost:3000"
+
+settings = Settings()

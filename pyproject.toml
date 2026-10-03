@@ -3,6 +3,9 @@ name = "portfolio-assistant-chatbot"
 version = "0.0.1"
 description = "Production-grade Agentic RAG chatbot for my portfolio"
 requires-python = ">=3.11"
+dependencies = [
+    "pydantic-settings>=2.15.0",
+]
 
 [tool.ruff]
 line-length = 100
