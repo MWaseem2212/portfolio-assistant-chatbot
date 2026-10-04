@@ -12,7 +12,7 @@ class Settings(BaseSettings):
     qdrant_api_key: str = ""
     langfuse_public_key: str = ""
     langfuse_secret_key: str = ""
-    langfuse_host: str = ""
+    langfuse_base_url: str = ""
     smtp_user: str = ""
     smtp_app_password: str = ""
     notify_to_email: str = ""
