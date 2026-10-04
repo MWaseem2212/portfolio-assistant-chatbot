@@ -1,4 +1,7 @@
 from pydantic_settings import BaseSettings, SettingsConfigDict
+from pathlib import Path
+
+BASE_DIR = Path(__file__).resolve().parents[2]
 
 class Settings(BaseSettings):
     model_config = SettingsConfigDict(env_file=".env", extra="ignore")
@@ -14,5 +17,9 @@ class Settings(BaseSettings):
     smtp_app_password: str = ""
     notify_to_email: str = ""
     allowed_origins: str = "http://localhost:3000"
+    log_level: str = "INFO"
+
+    portfolio_url: str = "https://waseem-portfolio-mocha.vercel.app/"
+    resume_path: Path = BASE_DIR / "data" / "raw" / "resume.pdf"
 
 settings = Settings()
