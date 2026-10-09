@@ -21,5 +21,7 @@ class Settings(BaseSettings):
 
     portfolio_url: str = "https://waseem-portfolio-mocha.vercel.app/"
     resume_path: Path = BASE_DIR / "data" / "raw" / "resume.pdf"
+    chunk_size: int = 1000
+    chunk_overlap: int = 200
 
 settings = Settings()
